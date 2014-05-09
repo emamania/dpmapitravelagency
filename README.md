@@ -30,3 +30,7 @@ Esto se hace para que al dar click en el botón Pagar en el tour, este redirija 
 1. Click en Guardar Característica.
 
 Esto se hace para que el usuario ponga el propio monto al pagar.
+
+## Idiomas
+
+No es necesario cambiar los textos, ya funciona para Inglés, Español y Portugués.
