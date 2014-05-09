@@ -1,63 +1,32 @@
-# INSTRUCCIONES PARA USAR EL THEME QELLUCHASKA
+# Qellucart
 
-1. Módulos para deshabilitar
-   a. overlay
-   b. comment
-   c. toolbar
-   d. shortcut
-   e. color
-   
-2. Módulos para habilitar o descargar (Los nombres que se muestran se descargan desde http://drupal.org/project/[nombre_modulo])
-	a. admin_menu
-	b. ctools
-	c. views
-	d. metatags_quick
-	e. opengraph_metatags
-	f. aggregator
-	g. php
-	
-3. Agregar los Feeds
-	Con el módulo Aggregator, agregar los feeds de noticias, testimonios y videos
+## Requisitos
 
-4. Views
-    a. Habilitar el módulo views
-	b. Importar las 3 vistas ya creadas en la carpeta "data"
-    Nota: Estos views, generan bloques que se mostrarán en el home y en el sidebar
+Se necesita instalar los siguientes módulos:
 
-5. Habilitar el Theme
-	
-6. Bloques y Regiones
-	Las regiones y bloques deben ir de la siguiente manera, el contenido de algunos bloques están también en la carpeta "data", Cambiar títulos de bloques de acuerdo a la conveniencia
-	El nombre de sistema y título está en el orden [Nombre de Sistema]/[Título]
+	1. [ubercart](https://drupal.org/project/ubercart)
+	1. [uc_atctweaks](https://drupal.org/project/uc_atctweaks)
+	1. [uc_varprice](https://drupal.org/project/uc_varprice)
 
-	Región: Ayuda
-		Ayuda del sistema
-	Región: Sidebar
-		Top Tours Sidebar
-		Facebook Recommendations/Tus Amigos Recomiendan (fbrec.block) [Javascript]
-		Vista: Testimonios Sidebar: Block
-	Contenido
-		Contenido de la página principal
-	Pie de página
-		Footer (footer.block) [PHP]
-		Google Analytics/Sin título <none>
-		Machupicchu Chat/Sin título <none> (Olark)
-	Welcome
-		Bienvenida/Sin título (welcome.block)
-	Home Izquierda
-		Top tours
-	Home Derecha
-		Vista: Lea testimonios de nuestros pasajeros: Block
-		Vista: Youtube Testimonios: Block
-	Home Bottom
-		Vista: Noticias de Machu Picchu: Block
-	Home More
-		Suscripciones FeedBurner/Recibe noticias en tu correo (feedburner.block) [Full HTML]
-		Autorizaciones renovadas/Autorizaciones renovadas (autorizaciones.block) [Full HTML]
-		Facebook LikeBox Home/Estamos en Facebook (fblikebox.block) [Javascript]
-	Share Bar
-		Sharebar/Sin título <none> (sharebar.block) [PHP]
+Respecto a Ubercart, deshabilitar el módulo uc_attributes
 
-7. Borrar todos los otros bloques, ya no sirven
-		
-8. Nada más
+## Uso
+
+Después de instalado, al editar cada tour se encuentra la pestaña "Características" o "Features", ingresamos a esa opción y seguimos estos pasos:
+
+### Pago directo
+
+	1. En *Añadir una nueva característica* escogemos: _Add to cart tweaks_.
+	1. Click en Agregar.
+	1. Marcar la opción _Formulario de finalización de compra_.
+
+Esto se hace para que al dar click en el botón Pagar en el tour, este redirija de frente al Pago y no a la vista de carrito.
+
+### Monto personalizado
+
+ 1. En *Añadir una nueva característica* escogemos: _Variable Price_.
+ 1. Click en Agregar.
+ 1. Dejar todos los datos como están.
+ 1. Click en Guardar Característica.
+
+Esto se hace para que el usuario ponga el propio monto al pagar.
