@@ -1,0 +1,218 @@
+#main {
+    margin-top: 50px;
+}
+
+#welcome {
+	margin-bottom: 0px;
+	position: relative;
+	padding:10px;
+    & h1{
+        color: #749536;
+        border-bottom: 1px solid #cdc8c8;
+        font-size: 22px;
+        @include fromin(648px){	
+            font-size: 30px;
+        }
+    }
+}
+#welcome img{
+	margin-bottom: 10px;
+}
+#welcome p {
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+#welcome .description a{
+	border-bottom: 1px solid #e1ecfa;
+}
+#welcome .description a:hover{
+	color: #a96833;
+}
+#welcome .button{
+	font-size: 16px;
+	color: #FFF;
+	padding: 10px 12px;
+	display: inline-block;
+}
+#welcome .action{
+	background: #e97b0f;
+	margin-right: 30px;
+}
+#welcome .no-action{
+	background: #749536;
+}
+#welcome .button:hover {
+	background: #a96833;
+}
+#welcome .hide-block {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+#welcome .hide-block a {
+	font-weight: bold;
+}
+
+
+.yout-more {
+    margin: 1em!important;
+    a {
+        padding: 7px 15px;
+        color: #fff;
+        border-radius: 3px;
+        background: var(--danger_alt);
+        text-decoration: none;
+    }
+}
+#homeright {
+    .slide-img {
+        position: relative;
+        br {display: none;}
+        img {
+            display: block;
+            width: 100%;
+        }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            height: 70px;
+            background: rgba(0,0,0,.7);
+            box-sizing: border-box;
+            padding: 20px;
+            width: 100%;
+            transition: all .75s ease;
+            a {
+                color: #fff;
+                font-size: 1.2em;
+                height: 100%;
+                display: block;
+                margin: none;
+                transition: all .75s ease;
+                text-decoration: none;
+            }
+        }
+    }
+}
+#homemore {
+    #CDSWIDSSP {
+        width: 100%!important;
+        .widSSPData {
+            text-align: center;
+            .widSSPBranding dt {
+                width: 100%;
+                img {
+                    margin: 0 auto;
+                }
+            }
+            .widSSPAll {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    .autorizacion {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: var(--fondo);
+        .cuadroautorizacion {
+            padding-top: .5em;
+            padding-bottom: .5em;
+            padding-right: .5em;
+            a {
+                display: block;
+                width: 110px;
+                border: 1px solid rgba($color: #000000, $alpha: .2);
+                &:hover {
+                    border-color: var(--primary);
+                }
+            }
+            &:nth-child(3), &:nth-child(6) {
+                padding-right: 0;
+            }
+        }
+    }    
+}
+#contento {
+    background: var(--fondo);
+    padding: 1em;
+}
+#footer {
+    background: #749536;
+    padding: 2em 0 4.5em;
+    font-size: 12px;
+    & h3 {
+        color: #f7f8a1;
+        border-bottom: 1px solid #86ab42;
+        font-family: 'Open Sans', Arial, sans-serif;
+        padding-bottom: 5px;
+    }
+    & a {
+        color: #fff;
+    }
+    .grid-contactanos {
+        @include fromin(md) {
+            display: none;
+        }
+    }
+    .block {
+        margin-bottom: 0;
+    }
+}
+.grid-contactanos {
+    display: block;
+    position: relative;
+    a {text-decoration: none;}
+    @include fromin(648px){
+        display: none;
+    }
+    .whatsapp {
+        background: #2bad22;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0px;
+        bottom: 10px;
+        border-radius: 30px;
+        position: fixed;
+        width: 92%;
+        span {
+            font-size: 1.3rem;
+            padding: 0 .5em;
+        }
+    }
+}
+/* VIEWS */
+.view-id-text_testimonials_of_our_passeng {
+    padding: .7em 1em;
+    background: #eaeaea;
+    .reviews {
+        border-bottom: 1px solid #c5c4c4;
+        margin-bottom: 1em;
+    }
+}
+
+.view-id-machu_picchu_news {
+    padding: .7em 1em;
+    background: #eaeaea;
+    .view-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:1.5em;
+    }
+}
+.noticias {
+    .noticia {
+        h3 {
+            font-size: 15px;
+        }
+        .noticia-fecha {
+            margin: 0;
+            font-size: 12px;
+        }
+        .noticia-description {
+            text-align: justify;
+        }
+    }
+    
+}

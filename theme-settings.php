@@ -7,7 +7,7 @@
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function qelluchaska_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
+function mapitravelagency_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
 
   // Create the form using Forms API: http://api.drupal.org/api/7
 

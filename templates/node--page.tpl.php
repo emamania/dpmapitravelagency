@@ -13,7 +13,7 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <div class="content"<?php print $content_attributes; ?>>
-      <section id="tour-bar">
+      <!--<section id="tour-bar">
         <div class="bar-social">
           <h5><?php print t('Share:'); ?></h5>
           <ul>
@@ -42,7 +42,7 @@
           </ul>
         </div>
         <?php endif; ?>
-      </section>
+      </section>-->
       <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
@@ -60,7 +60,7 @@
     <div id="comments">
     <h2 class="title">Comentarios</h2>
     <div class="meta"> <?php print render($content['links']); ?> <?php print render($content['comments']); ?> </div>
-    <div class="fb-comments" data-href="<?php print $path; ?>" data-num-posts="5" data-width="635"></div>
+    <div class="fb-comments" data-href="<?php print $path; ?>" data-num-posts="5" data-width="100%" data-mobile="true"></div>
   </div>
 </article>
 <!-- /.node --> 

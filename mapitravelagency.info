@@ -12,8 +12,8 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = Qellu Cart
-description =  Una estrella amarilla para la suerte  (Soporte para Carrito)
+name        = travelagency
+description = Una estrella amarilla para la suerte (Soporte para Carrito)
 
 
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
@@ -34,25 +34,23 @@ base theme  = zen
 
 ; Propio de Qelluchaska
 stylesheets[screen][]        = framework/reset.css
-stylesheets[screen][]        = framework/text.css
 stylesheets[screen][]        = templates/system.messages.css
-stylesheets[screen][]        = styles/layout.css
-stylesheets[all][]           = styles/mediaqueries.css
 
-;stylesheets[all][]        = css/html-reset.css
-stylesheets[all][]        = css/wireframes.css
-;stylesheets[all][]        = css/layout-fixed.css
-;stylesheets[all][]        = css/page-backgrounds.css
+stylesheets[screen][]        = styles/layout.css                    
+;stylesheets[all][]           = styles/mediaqueries.css
+
+
+;stylesheets[all][]        = css/wireframes.css
 stylesheets[all][]        = css/tabs.css
-;stylesheets[all][]        = css/pages.css
-stylesheets[all][]        = css/blocks.css
-;stylesheets[all][]        = css/navigation.css
-stylesheets[all][]        = css/views-styles.css
-stylesheets[all][]        = css/nodes.css
-stylesheets[all][]        = css/comments.css
-stylesheets[all][]        = css/forms.css
-stylesheets[all][]        = css/fields.css
-stylesheets[print][]      = css/print.css
+;//stylesheets[all][]        = css/pages.css
+;stylesheets[all][]        = css/blocks.css
+;//stylesheets[all][]        = css/navigation.css
+;stylesheets[all][]        = css/views-styles.css
+;stylesheets[all][]        = css/nodes.css
+;stylesheets[all][]        = css/comments.css
+;stylesheets[all][]        = css/forms.css
+;stylesheets[all][]        = css/fields.css
+;stylesheets[print][]      = css/print.css
 
 
 
@@ -73,9 +71,8 @@ stylesheets[print][]      = css/print.css
 
 ; Optionally add some JavaScripts to your theme.
 
-;scripts[] = js/script.js
+scripts[] = scripts/jquery.slides.min.js
 scripts[] = scripts/user.script.js
-scripts[] = scripts/adapt.js
 
 
 
@@ -91,19 +88,19 @@ scripts[] = scripts/adapt.js
 
 regions[help]           = Help
 
-regions[sidebar]  = Sidebar
-regions[content]  = Content
-regions[footer]   = Footer
-regions[visa]   = Visa
+regions[sidebar]        = Sidebar
+regions[content]        = Content
+regions[footer]         = Footer
+regions[visa]           = Visa
 
 ; Front Page Regions
 
-regions[welcome] = Welcome
-regions[homeleft] = Home Left
-regions[homeright] = Home Right
-regions[homebottom] = Home Bottom
-regions[homemore] = Home More
-regions[sharebar] = Share Bar
+regions[welcome]        = Welcome
+regions[homeleft]       = Home Left
+regions[homeright]      = Home Right
+regions[homebottom]     = Home Bottom
+regions[homemore]       = Home More
+regions[sharebar]       = Share Bar
 
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the
@@ -112,14 +109,14 @@ regions[sharebar] = Share Bar
 ; entry for it below. See the Drupal 7 Theme Guide for more info:
 ; http://drupal.org/node/171205#features
 
-features[] = logo
-features[] = name
-features[] = slogan
-features[] = node_user_picture
-features[] = comment_user_picture
-features[] = favicon
-features[] = main_menu
-features[] = secondary_menu
+features[]              = logo
+features[]              = name
+features[]              = slogan
+features[]              = node_user_picture
+features[]              = comment_user_picture
+features[]              = favicon
+features[]              = main_menu
+features[]              = secondary_menu
 
 
 

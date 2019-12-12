@@ -12,11 +12,26 @@
     <?php print render($title_suffix); ?>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
-    <div class="content"<?php print $content_attributes; ?>>
+     <div class="content"<?php print $content_attributes; ?>>
       <section id="tour-bar">
         <div class="bar-visa">
-          <h5><?php print t('Pay with'); ?> <img src="/sites/all/themes/qellucart/images/paypal-logo.png" height="30" alt="<?php t('Pay with PayPal'); ?>" /></h5>
+          <h5><?php print t('Pay with'); ?></h5>
+              <img src="/sites/all/themes/qellucart/images/logo-paypal.png" height="30" alt="<?php t('Pay with PayPal'); ?>" />
           <p><input type="text" placeholder="<?php print t('Advance'); ?>" id="the-amount" autofocus></p>
+          <div class="tooltip">
+          <span>
+<p><strong>¿What is Paypal?</strong></p>
+
+<ul style="text-align:left;">
+<li>It is a method of easy, quick payment, and insurance. </li>
+<li>You can make payment by credit card and debit cards.</li>
+<li>Register in PayPal your financial data once. It wont be necessary to collect them in future purchases.</li>
+<li>PayPal protects your information. We NOT share your financial data.</li>
+</ul>
+
+          </span>
+          <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" width="130" style="margin-top:-10px; margin-left:0; display:block; padding-bottom:5px"> </div>
+          <!--<h5><img src="http://media.perunoticias.net/images/tarjetas-paypal.jpg" width="80" style="margin-top:-10px; margin-left:24px; display:block; padding-bottom:5px"/></h5>-->
         </div>
       	<div class="bar-reserva">
         	<h5><?php print t('Book now!'); ?></h5>
@@ -61,7 +76,7 @@
     ?>
     </div>
     <div class="meta"> <?php print render($content['links']); ?> <?php print render($content['comments']); ?> </div>
-    <div class="fb-comments" data-href="<?php print $path; ?>" data-num-posts="5" data-width="635"></div>
+<div class="fb-comments" data-href="<?php print $path; ?>" data-num-posts="5" data-width="100%" data-order-by="reverse_time" data-mobile="true"></div>
   </div>
 </article>
 <!-- /.node --> 

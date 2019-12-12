@@ -24,10 +24,45 @@ var paramsSkype = 'location=0,status=0,scrollbars=0,width=450,height=350';
     ventana = $(window).width();
     // co es el tamanio de el espacio a cada lado del centro y se le resta 83 por el tamanio del sharebar
     // 83 es el tamanio de Share bar y 960 es el tamanio de #main
-    co = parseInt((ventana-960)/2) - 88;
+    co = parseInt((ventana-1368)/2) - 83;
     // Posicionamos el Sharebar
     $('#sharebar').css('left', co);
   };
+
+  function loadSlider(){
+    $("#slides").slidesjs({
+      width:1360,
+      height:350,
+      play:{
+        auto: true,
+        interval:2500
+      },
+      pagination:{
+        active: false
+      },
+      navigation:{
+        active: false
+      }
+    });
+
+    if (window.innerWidth <= 640) {
+      $("#slidesM").slidesjs({
+        width:640,
+        height:340,
+        navigation:{
+        active: false
+        },
+        pagination:{
+          active: false
+        },
+        play:{
+          auto: true,
+          interval: 2500
+        }
+      });
+      console.log("Ejecutando Slider solo en los dispositivos Moviles");
+    }
+  }
 
   Drupal.behaviors.qelluchaska = {
     attach: function (context) {
@@ -42,7 +77,7 @@ var paramsSkype = 'location=0,status=0,scrollbars=0,width=450,height=350';
             price=0;
             price=parseInt($(this).text());
             // Opera y reemplaza precios
-            $(this).text("USD "+price).next("td").text("S/."+parseInt(price*cambio)).css("font-size","11px"); 
+            $(this).text("USD "+price).css("font-size","11px"); //.next("td").text("S/."+parseInt(price*cambio)).css("font-size","11px"); 
           });
         }
       });
@@ -71,18 +106,18 @@ var paramsSkype = 'location=0,status=0,scrollbars=0,width=450,height=350';
       }) ;
 
       sharebarHandler();
-      
+      loadSlider();
       // Premio.
-      var header_inner = $('#header-inner');
-      var banner = $('<img src="http://media.perunoticias.net/images/logos/empresaperuana.png" alt="Premio mejor empresa de Viajes y Turismo">');
-      var div_banner = $('<div id="premio"></div>');
-      var text = $('<p><span>Premio Mejor<br />Agencia de Viajes y Turismo en Per&uacute;</span></p>');
-      text.appendTo(div_banner);
-      banner.appendTo(div_banner);
-      div_banner.appendTo(header_inner);
-      div_banner.click(function() {
-        location.href = 'http://www.machupicchu.biz/mejor-agencia-de-viajes-y-turismo-en-peru-machu-picchu-travel';
-      });
+      // var header_inner = $('#header-inner');
+      // var banner = $('<img src="https://www.machupicchutravelagency.com/imagenes/empresaperuana.png" alt="Premio mejor empresa de Viajes y Turismo">');
+      // var div_banner = $('<div id="premio"></div>');
+      // var text = $('<p><span>Award to <br/>The best travel agency in Peru</span></p>');
+      // text.appendTo(div_banner);
+      // banner.appendTo(div_banner);
+      // div_banner.appendTo(header_inner);
+      // div_banner.click(function() {
+      //   location.href = 'https://www.machupicchu.biz/mejor-agencia-de-viajes-y-turismo-en-peru-machu-picchu-travel';
+      // });
 
       // Visa.
       var form = $('.add-to-cart form', context);

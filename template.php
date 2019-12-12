@@ -1,5 +1,4 @@
 <?php
-
 /*
 	Estilos específicos de la página de inicio
 	Sólo se cargan cuando estamos en <front>
@@ -34,7 +33,7 @@ if(drupal_is_front_page()) {
 		'weight' => 10,
 		'preprocess' => FALSE
 	);
-  drupal_add_css(drupal_get_path('theme', 'qelluchaska') . "/styles/page-front.css", $options);
+  drupal_add_css(drupal_get_path('theme', 'mapitravelagency') . "/styles/page-front.css", $options);
   
   $og_attributes = array('og:url', 'og:title', 'og:image', 'og:description', 'fb:app_id');
   
@@ -49,7 +48,7 @@ if(drupal_is_front_page()) {
           'content' => $val,
         ),
       );
-      drupal_add_html_head($element, "qelluchaska_meta_$og_attribute");
+      drupal_add_html_head($element, "mapitravelagency_meta_$og_attribute");
     }
   }
 }

@@ -1,0 +1,22 @@
+#header {
+    .hddata {
+        position: relative;
+        img {
+            min-height: 165px;
+        }
+        .logo {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            background: #000000a1;
+            a {
+                display: block;
+                @media (max-width:568px){
+                    img {
+                        min-height: auto;
+                    }
+                }            
+            }
+        }
+    }
+}

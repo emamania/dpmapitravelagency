@@ -1,0 +1,122 @@
+#sidebar {}
+#content-body {
+    .tabs {
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+    }
+    #tour-bar {
+        background: #f3f3f3;
+        padding: 1rem;
+        width: 130px;
+        .bar-visa {
+            border-bottom: 1px solid #cdcaca;
+            text-align: center;
+            padding-bottom: 10px;
+            #the-amount {
+                padding: 4px 5px;
+                border-radius: 3px;
+                border-width: 1px;
+                width: 100px;
+            }            
+        }
+        .bar-reserva, .bar-social {
+            text-align: center;
+            padding-top: 1em;
+        }
+        .bar-social {
+            ul {
+                margin: 0;
+                li {
+                    margin: 0;
+                    list-style: none;
+                }
+            }
+        }
+        .action {
+            background: #e97b0f;
+        }
+        .no-action {
+            background: #749536;
+        }
+        .button {
+            font-size: 15px;
+            color: #FFF;
+            padding: 5px 6px;
+            display: block;
+            width: 100px;
+            text-align: center;
+            margin: 3px auto;
+        }
+    }
+    .content {
+        position: relative;
+        #tour-bar {
+            position: absolute;
+            right: 0;
+        }
+    }
+    img {
+        display: block;
+    }
+    h4 {
+        display: flex;
+        margin: 1rem 0;        
+    }
+    p {
+        text-align: justify;
+        img {
+            margin-left: 1rem;
+        }
+    }
+    .img-responsive-tour {
+        margin-bottom: 1em;
+        img {
+            width: 100%;
+        }
+    }
+    .img-tours-480 {
+        width: 80%;
+        position: relative;
+        margin: 1em 0;
+        br {display: none;}
+        img {width: 100%;}
+        figcaption {            
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font: normal 14px "Open Sans", Arial, Helvetica, Sans-serif;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            background: rgba(0,0,0,.6);
+            padding: .4em 0;
+        }
+    }
+}
+.tooltip {
+    position: relative;
+    width: 100%;
+    span {
+        display: none;
+        padding: 2px 3px;
+        text-decoration: none;
+        transition: all 2s;
+    }
+    &:hover span {
+        display: inline;
+        position: absolute;
+        bottom: 120%;
+        right: 0%;
+        z-index: 100;
+        opacity: 0.93;
+        font-size: 12px;
+        background: #8C9A3F;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 16px;
+        width: 250px;
+    }
+}

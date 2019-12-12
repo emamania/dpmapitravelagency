@@ -1,11 +1,24 @@
-@media screen and (max-width: 960px) {
-  #contact-bar {
+@media screen and (max-width: 1090px){
+    #contact-bar {
     display: none;
   }
-  #main {
-    padding-top: 0px;
+    #main {
+    padding-top: 0px !important;
   }
-  
+}
+@media screen and (min-width: 961px){
+	#content{
+		min-width:960px !important;
+	}
+	#header{
+		min-width:960px !important;
+	}
+  #footer-inner{
+    min-width:960px !important;
+  }
+}
+@media screen and (max-width: 960px) {
+
   #sharebar {
     /*  display: none;*/
     left: 30px !important;
@@ -13,33 +26,45 @@
     top: auto !important;
     position: fixed;
   }
-
   #sharebar-links {
     overflow: hidden;
     -webkit-box-shadow: 2px 2px 3px #9d9d4e !important;
     -moz-box-shadow: 2px 2px 3px #9d9d4e !important;
     box-shadow: 2px 2px 3px #9d9d4e !important;
   }
-
   #sharebar-links li {
     float: left;
     margin-right: 4px !important;
   }
-  
-  .block {
-    padding: 0 10px !important;
-  }
-  
   .testimonio-video iframe {
     width: 100% !important;
   }
-}
-
-@media screen and (max-width: 768px) {
-  #header-inner {
-    background-image: url('../images/bg-header-es-768.jpg') !important;
+  #content{
+  	width:100% !important;
   }
-  
+  #header{
+  	width:100% !important;
+  }
+  #footer-inner{
+  	width:100% !important;
+  }
+  #homeleft{
+  	margin-right:10px !important;
+  }
+  .img-tours-480{
+  	width:68% !important;
+  }
+  .grid_6.omega{
+    width:15% !important;
+  }
+  #logo
+  {
+    top: 5px !important;
+    left: 5px !important;
+    width: 20% !important;
+  }
+}
+@media screen and (max-width: 768px) {
   #welcome h1 {
     padding-top: 5px;
     font-size: 20px !important;
@@ -53,15 +78,9 @@
     border-bottom: 1px solid #cdcaca;
     padding-left: 10px;
   }
-  
-  #sidebar {
-    display: none;
-  }
-  
   #footer {
     margin-bottom: 40px;
   }
-  
   #mobile-bar {
     color: #FFF;
     background: #e77418;
@@ -78,81 +97,135 @@
     -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   }
-  
   #mobile-bar p {
     font: 11px/24px Arial, sans-serif;
     margin-bottom: 0px !important;
   }
+  #homeleft{
+  	margin-right:5px !important;
+  }
+  #tour-bar{
+  	display:none !important;
+  }
+  .img-tours-480{
+  	width:90% !important;
+  	margin: auto;
+  }
+  .email-responsive td{
+    display:block;
+    border:none !important;
+  }
 }
-
 @media screen and (max-width: 640px) {
-  #header-inner {
-    background-image: url('../images/bg-header-es-640.jpg') !important;
-  }
-  
-  #header-mail {
-    width: 300px !important;
-    font-size: 12px !important;
-    right: 0 !important;
-  }
-  /* Olark */
-  #habla_beta_container_do_not_rely_on_div_classes_or_names {
-    display: none !important;
-  }
+	#homeleft{
+		width:100% !important;
+	}
+	#homeright{
+		width:100% !important;
+	}
+	#homebottom{
+		width:100% !important;
+	}
+	#homemore{
+		width:100% !important;
+	}  
+	#header-mail {
+		width: 300px !important;
+		font-size: 12px !important;
+		right: 0 !important;
+	}
+	#homeleft{
+		margin-right:5px !important;
+	}
+	#sharebar{
+		display:none;
+	}
+	#sidebar{
+		display:none !important;
+	}
+	.grid_6{
+		width:100% !important;
+	}
+	.grid_6.omega{
+		width:100% !important;
+	}
+	.sliderDesktop{
+		display:none !important;
+	}
+	.sliderMovile{
+		display:block !important;
+	}
 }
 
 @media screen and (max-width: 480px) {
-  #header-inner {
-    background-image: url('../images/bg-header-es-480.jpg') !important;
-    height: 160px !important;
-  }
-  
   #header-mail {
     width: 480px !important;
     font-size: 11px !important;
     right: 0 !important;
   }
   .noticia-social {
-    padding: 0 !important;
-    clear: both;
+    display:none;
   } 
   
   .node-social {
     width: 50px !important;
     float: none !important;
   }
-  
+ #sharebar{
+ display:none;
+ }
+ #premio{
+  display:none !important;
+ }
+ table th strong{
+  word-break:break-all;
+ }
+ .img-resp-servicios
+    {
+      width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 320px) {
-  #header-inner {
-    background-image: url('../images/bg-header-es-320.jpg') !important;
-    height: 145px !important;
-  }
-  
   #header-mail {
     width: 320px !important;
     font-size: 11px !important;
     right: 0 !important;
   }
-  
+ #premio{
+   display: none;
+  }
   #welcome h1 {
     font-size: 14px !important;
     font-weight: bold;
   }
-  
   body {
     font: 11px/1.5em Arial, Helvetica, sans-serif !important;
   }
-  
   .noticia-social {
-    padding: 0 !important;
-    clear: both;
+    display: none;
   } 
-  
   .node-social {
     width: 50px !important;
     float: none !important;
   }
-  
+  .ubicacionMapa {
+    width: 300px !important;
+    height: 201px !important;
+  }
+  #sharebar{
+    display:none;
+  } 
+  ul li{
+    padding-bottom:5px !important;
+    padding-top:5px !important;
+  }
+  thead th{
+    word-break: break-all;
+  }
+}
+@media only screen and (max-device-width: 680px){
+    .grid-contactanos{
+       display:block !important;
+    }
 }

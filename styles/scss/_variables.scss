@@ -1,0 +1,57 @@
+:root {
+    --sucess            : #749536;
+    --sucess_alt         : #566f28;
+    --marron            : #a35a20;
+    --marron_alt        : #7e4211;
+    --amarillo          : #f3f3cd;
+    --amarillo_alt      : #d4d4b3;
+    --fondo             : #f6f7f8;
+    --texto             : #4e5c66;
+    --texto_alt         : #718696;
+
+    --primary           : #158cba;
+    --primary_alt       : #106a8c;
+    /* --sucess            : #008A32;
+    --sucess_alt        : #1f8c22; */
+    --info              : #75caeb;
+    --info_alt          : #48b9e5;
+    --warning           : #ff851b;
+    --warning_alt       : #e76b00;
+    --danger            : #ff4136;
+    --danger_alt        : #ff1103;
+}
+:root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* MIxing */
+$breakpoints: (
+    sm      : 480px,
+    md      : 768px,
+    lg      : 1024px,
+    xl      : 1224px,
+    xx      : 1440px
+);
+@mixin fromin($bp) {
+   @if map-has-key($breakpoints, $bp ){
+       @media screen and (min-width : map_get($breakpoints,$bp)) {
+           @content;
+       }
+   } @else {
+       @media screen and (min-width : $bp) {
+           @content;
+       }
+   }
+}
+@keyframes rotarwpp{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.2);
+	}
+}

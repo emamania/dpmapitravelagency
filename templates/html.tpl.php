@@ -2,58 +2,50 @@
 	global $base_root;
 ?>
 <!DOCTYPE html>
-<!--[if IEMobile 7]><html class="iem7" <?php print $html_attributes; ?>><![endif]-->
-<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]-->
-<!--[if IE 8]><html class="lt-ie9" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head profile="<?php print $grddl_profile; ?>">
-<?php print $head; ?>
-<title><?php print $head_title; ?></title>
-<?php if ($default_mobile_metatags): ?>
-  <meta name="MobileOptimized" content="width">
-  <meta name="HandheldFriendly" content="true">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-<?php endif; ?>
-<meta http-equiv="cleartype" content="on">
-<?php print $styles; ?>
-<?php print $scripts; ?>
-<?php if ($add_respond_js): ?>
-  <!--[if lt IE 9]>
-  <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>
-  <![endif]-->
-<?php elseif ($add_html5_shim): ?>
-  <!--[if lt IE 9]>
-  <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
-  <![endif]-->
-<?php endif; ?>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<script>
-  window.___gcfg = {lang: '<?php print $GLOBALS['gplang']; ?>'};
-
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<!--Google Analytics-->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-9352105-3']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+  <?php print $head; ?>
+  <meta property="fb:app_id" content="215893742140696" />
+  <title><?php print $head_title; ?></title>
+  <?php if ($default_mobile_metatags): ?>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="fb:app_id" content="215893742140696" />
+    <meta name="theme-color" content="#749536"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#749536"/>
+  <!-- <meta property="fb:admins" content="{100010271913189}"/> -->
+  <?php endif; ?>
+  <?php print $styles; ?>
+  <?php print $scripts; ?>
+  <?php if ($add_respond_js): ?>
+    <!--[if lt IE 9]>
+    <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>
+    <![endif]-->
+  <?php elseif ($add_html5_shim): ?>
+    <!--[if lt IE 9]>
+    <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
+    <![endif]-->
+  <?php endif; ?>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <!--Google Analytics-->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9352105-5']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-<div id="fb-root"></div>
-<script>
+  <div id="fb-root"></div>	
+  <script>
     window.fbAsyncInit = function() {
-      FB.init({appId: '<?php print theme_get_setting('fb:app_id'); ?>', status: true, cookie: true,
+      FB.init({appId: '215893742140696', status: true, cookie: true,
                xfbml: true});
     };
     (function() {
@@ -63,6 +55,6 @@
       document.getElementById('fb-root').appendChild(e);
     }());
   </script> 
-<?php print $page_top; ?> <?php print $page; ?> <?php print $page_bottom; ?>
+  <?php print $page_top; ?> <?php print $page; ?> <?php print $page_bottom; ?>
 </body>
 </html>

@@ -16,7 +16,6 @@
       print render($content);
     ?>
     </div>
-    <div class="meta"> <?php print render($content['links']); ?> <?php print render($content['comments']); ?> </div>
   </div>
 </article>
 <!-- /.node --> 
